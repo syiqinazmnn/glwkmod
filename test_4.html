@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Y2K Artist - Obscura Drive</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle, #0d0d0d 0%, #1a1a1a 100%);
+      font-family: 'Share Tech Mono', monospace;
+      color: #cfcfff;
+      cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur1057.cur'), auto;
+    }
+
+    header {
+      background: linear-gradient(to right, #3f0071, #12002f);
+      color: #ccc;
+      text-align: center;
+      padding: 30px;
+      font-size: 2.2em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-bottom: 3px solid #4b007d;
+      box-shadow: 0 0 20px #6e00ff;
+    }
+
+    marquee {
+      font-size: 0.95em;
+      background-color: #1b002b;
+      color: #a86eff;
+      padding: 8px;
+      font-weight: bold;
+      border-top: 1px solid #4d007c;
+      border-bottom: 1px solid #4d007c;
+    }
+
+    main {
+      display: flex;
+      margin: 20px;
+    }
+
+    aside {
+      width: 25%;
+      background: #111;
+      padding: 20px;
+      border-right: 2px solid #4b007d;
+      box-shadow: inset 0 0 10px #32004b;
+    }
+
+    section {
+      width: 75%;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #bc94ff;
+      border-bottom: 2px dashed #4b007d;
+      padding-bottom: 5px;
+      margin-top: 30px;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: #b783ff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff9af4;
+    }
+
+    ul {
+      list-style-type: '➤ ';
+      padding-left: 20px;
+    }
+
+    .box {
+      background-color: #1e1e1e;
+      border: 1px solid #4b007d;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 10px #32004b;
+    }
+
+    img.chrome {
+      width: 100%;
+      border: 3px solid #4b007d;
+      box-shadow: 0 0 15px #6e00ff;
+      margin-top: 15px;
+      filter: grayscale(100%) contrast(120%);
+    }
+
+    .image-gallery img {
+        width: 200px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        cursor: zoom-in;
+        border: 2px solid #9600ff;
+        border-radius: 10px;
+        filter: grayscale(30%) contrast(120%);
+        }
+
+        .image-gallery img:hover {
+        transform: scale(1.05) rotate(1deg);
+        filter: grayscale(0%) contrast(140%);
+        }
+
+        /* Modal Styles */
+        .modal {
+        display: none;
+        position: fixed;
+        z-index: 99;
+        padding-top: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(15, 0, 20, 0.95);
+        backdrop-filter: blur(3px);
+        }
+
+        .modal-content {
+        display: block;
+        margin: auto;
+        max-width: 90%;
+        max-height: 90vh;
+        border: 3px solid #9600ff;
+        border-radius: 12px;
+        box-shadow: 0 0 30px #ff00ff99;
+        }
+
+        .modal .close {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        }
+
+        .player-deck {
+        background-color: #1a001a;
+        padding: 2rem;
+        border: 2px dashed #9600ff;
+        border-radius: 20px;
+        margin-top: 2rem;
+        }
+
+        .player-deck h2 {
+        font-family: 'Orbitron', monospace;
+        color: #ffccff;
+        margin-bottom: 1rem;
+        }
+
+        .player-box {
+        margin-bottom: 1.5rem;
+        }
+
+    footer {
+      text-align: center;
+      background-color: #12002f;
+      color: #777;
+      padding: 15px;
+      font-size: 0.9em;
+      letter-spacing: 1px;
+      border-top: 2px solid #4b007d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    ⛓️ GLWKMOD ⛓️
+  </header>
+
+  <marquee scrollamount="4">⚠️ NEW TRACKS COMING #SOON ⚠️</marquee>
+
+  <main>
+    <aside>
+      <h3>🛞 Console</h3>
+      <ul>
+        <li><a href="#bio">> SYSTEM.BIO</a></li>
+        <li><a href="#music">> TOP.TRACKS</a></li>
+        <li><a href="#gallery">> CAM.DUMP</a></li>
+        <li><a href="#contact">> CONNECT.PORT</a></li>
+      </ul>
+
+      <h3>🔧 TUNED LOGS</h3>
+      <div class="box">🗂️ FILE: glitch.core</div>
+      <div class="box">🔋 ENERGY: unstable.wav</div>
+      <div class="box">📡 SIGNAL: found</div>
+    </aside>
+
+    <section>
+      <h2 id="bio">System Bio</h2>
+      <p>GLWKMOD is a Malaysian music producer specializing in phonk beats since 2020. 
+        He released his first track, <strong>"Phonk Heater"</strong>, at the age of 16. 
+        His journey wouldn’t have been possible without the support of his friends.</p>
+
+      <h2 id="music">Top Tracks</h2>
+      <ul>
+        <li>🛠 Cursed Midnight</li>
+        <li>🖤 Purpli$h</li> 
+        <li>🌫️ Lambo</li> 
+        
+        <section class="player-deck">
+            <h2>🎶 Tuned In</h2>
+            <div class="player-box">
+              <h3>Spotify Drop</h3>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0narfFv6R0EDNbwZecDtEQ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="player-box">
+              <h3>SoundCloud Dump</h3>
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2010366551&color=%239e9da0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/glwkmod" title="GLWKMOD" target="_blank" style="color: #cccccc; text-decoration: none;">GLWKMOD</a> · <a href="https://soundcloud.com/glwkmod/glwkmod-chrm-ft-dayn" title="GLWKMOD - CHRM ft Dayn" target="_blank" style="color: #cccccc; text-decoration: none;">GLWKMOD - CHRM ft Dayn</a></div>
+            </div>
+          </section>
+      </ul>
+
+      <h2 id="gallery">Camera Dump</h2>
+      <p>Unfiltered. Raw.</p>
+
+      <div class="image-gallery">
+        <img src="image/photo 1.jpg" style="height: 150px;" alt="Track Cover" class="hover-zoom" onclick="openModal(this)">
+        <img src="image/photo 2.jpg" style="height: 150px;" alt="Track Cover" class="hover-zoom" onclick="openModal(this)">
+        <img src="image/photo 3.jpg" style="height: 150px;" alt="Track Cover" class="hover-zoom" onclick="openModal(this)">
+        <img src="image/photo 6.jpg" style="height: 150px;" alt="Track Cover" class="hover-zoom" onclick="openModal(this)">
+        <img src="image/photo 4.jpg" style="height: 150px;" alt="Track Cover" class="hover-zoom" onclick="openModal(this)">
+        <img src="image/photo 5.jpg" style="height: 150px;" alt="Track Cover" class="hover-zoom" onclick="openModal(this)">
+
+      </div>
+      
+      <!-- Modal viewer -->
+      <div id="imgModal" class="modal" onclick="this.style.display='none'">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+      </div>
+      
+
+      <h2 id="contact">Connect Port</h2>
+      <p>🧠 Email: <a href="mailto:syakirinalif@gmail.com">syakirinalif@gmail.com</a></p>
+      <p>🕹️ Instagram: <a href="https://www.instagram.com/glwkmod/?hl=en">@glwkmod</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 GLWKMOD | Glitched in transmission | 
+  </footer>
+
+  <script>
+    function openModal(img) {
+      const modal = document.getElementById("imgModal");
+      const modalImg = document.getElementById("modalImg");
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    }
+  </script>
+  
+
+</body>
+</html>
